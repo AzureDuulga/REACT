@@ -1,0 +1,33 @@
+* {
+  padding: 0ch;
+}
+ul {
+  justify-content: space-between;
+  list-style-type: none;
+  display: flex;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+li {
+  margin: 5px;
+  font-size: 14px;
+  color: #424242;
+}
+li:hover {
+  color: #5a47ab;
+}
+img {
+  height: 25px;
+  width: 90px;
+}
+.flex {
+  display: flex;
+}
+nav p {
+  color: #424242;
+  font-size: 36px;
+}

@@ -1,0 +1,36 @@
+h1 {
+  color: #d05270;
+  font-size: 52px;
+}
+h5 {
+  color: #424242;
+  font-size: 52px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.width {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+.socialMedia {
+  height: 60px;
+  width: 201px;
+  background-color: #424242;
+  color: white;
+}
+#twitter {
+  background: #47acdf;
+}
+#linkedin {
+  background: #1275b1;
+}
+#medium {
+  background: black;
+}
+#child {
+  height: 407px;
+  width: 408.65435791015625px;
+}

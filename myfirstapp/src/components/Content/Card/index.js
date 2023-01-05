@@ -1,3 +1,5 @@
+import "./card.css";
+
 const cardData = [
   {
     img: "/zurag/Rectangle 124.png",
@@ -67,17 +69,17 @@ const cardData = [
 
 const CardItem = (props) => {
   return (
-    <div>
-      <img src={props.img} alt="zurag" />
-      <p>{props.date}</p>
-      <h2>{props.title}</h2>
+    <div className="card-width margin">
+      <img className="img-width" src={props.img} alt="zurag" />
+      <p className="date">{props.date}</p>
+      <h2 className="title">{props.title}</h2>
       <p>{props.description}</p>
-      <h4>{props.btn}</h4>
+      <btn className="btn">{props.btn}</btn>
     </div>
   );
 };
 
-const Card = () => {
+const CardList = () => {
   return cardData.map((card) => {
     return (
       <CardItem
@@ -91,4 +93,4 @@ const Card = () => {
   });
 };
 
-export default Card;
+export default CardList;

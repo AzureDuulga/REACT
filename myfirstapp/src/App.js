@@ -1,16 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-import UserCard from "./components/card";
-import NavBar from "./components/navbar";
-import BlogPost from "./components/Blog";
-import Body from "./components/body";
+import NavBar from "./components/Content/Header";
+import Body from "./components/Content";
+import Footer from "./components/Content/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App width">
       <NavBar />
-      <BlogPost />
       <Body />
+      <Footer />
     </div>
   );
 }

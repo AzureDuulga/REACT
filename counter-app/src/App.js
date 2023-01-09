@@ -4,19 +4,27 @@ import Btn from "./component/button";
 import { useState } from "react";
 
 const buttonData = [
-  { title: "Nemeh", class: "Primary" },
-  { title: "Hasah", class: "Secondary" },
+  { title: "Нэмэх", class: "Primary" },
+  { title: "Хасах", class: "Secondary" },
 ];
 function App() {
   const [count, setCount] = useState(0);
-  const handleClick = () => {
-    setCount(count + 1);
+  const handleClick = (title) => {
+    if (title === "Нэмэх") {
+      setCount(count + 1);
+    } else setCount(count - 1);
   };
   return (
     <div className="App">
       <h1>Counter: {count}</h1>
       {buttonData.map((btns) => (
-        <Btn title={btns.title} class={btns.class} click={handleClick} />
+        <Btn
+          title={btns.title}
+          class={btns.class}
+          click={() => {
+            handleClick(btns.title);
+          }}
+        />
       ))}
     </div>
   );

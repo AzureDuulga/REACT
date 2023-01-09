@@ -1,5 +1,10 @@
 import "./blog.css";
 import Button from "./button";
+
+const handleClick = (name) => {
+  alert("Hi button: " + name);
+};
+
 const BlogPost = () => {
   return (
     <main className="flex" id="margin-t">
@@ -14,7 +19,12 @@ const BlogPost = () => {
           be considered unsuccessful in my opinion.
         </p>
         <div className="flex">
-          <Button id={"twitter"} name={"TWITTER"} img={"/zurag/twitter.png"} />
+          <Button
+            id={"twitter"}
+            name={"TWITTER"}
+            img={"/zurag/twitter.png"}
+            click={handleClick}
+          />
           <Button
             id={"linkedin"}
             name={"LINKEDIN"}

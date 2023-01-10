@@ -1,20 +1,18 @@
-import Menu from "./Category";
-import CardList from "./Card";
-import Blog from "./Blog";
 import "./index.css";
+import Navbar from "./Header";
+import Body from "./Body";
+import Footer from "./Footer";
 
-const Body = () => {
+const Content = () => {
   return (
     <div>
-      <Blog />
-      <ul id="margin">
-        <Menu />
-      </ul>
-      <div className="flex-wrap">
-        <CardList />
+      <Navbar />
+      <Body />
+      <div id="Footer">
+        <Footer />
       </div>
     </div>
   );
 };
 
-export default Body;
+export default Content;
